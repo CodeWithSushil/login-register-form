@@ -1,20 +1,23 @@
-<?php include_once("./header.php"); ?>
+<?php
+include_once("./header.php");
+require_once("../php/csrfToken.php");
+?>
 <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6">
+                    <div class="col-md-6 col-lg-6">
                         <div class="card shadow">
                             <div class="card-body">
-                                <h1
+                                <h2
                                     class="card-title text-center text-uppercase"
                                 >
                                     Register
-                                </h1>
-                                <form class="card-text">
+                                </h2>
+                                <form class="card-text" method="post" action="../php/register.php">
                                     <div class="mb-3">
                                         <input
                                             type="hidden"
                                             name="csrf_token"
-                                            value=""
+                                            value="<?php echo generateCSRFToken();?>"
                                         />
                                     </div>
                                     <div class="mb-3">

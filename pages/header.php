@@ -10,4 +10,4 @@
         <link rel="stylesheet" href="../assets/css/styles.css" />
     </head>
     <body>
-        <main class="main" id="main">
+        <main class="my-4" id="main">
