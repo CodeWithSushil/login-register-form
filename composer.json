@@ -1,0 +1,7 @@
+{
+    "require": {
+        "slim/csrf": "^1.5",
+        "egulias/email-validator": "^4.0",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
